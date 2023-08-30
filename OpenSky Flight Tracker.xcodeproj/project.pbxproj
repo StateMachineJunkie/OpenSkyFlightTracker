@@ -18,6 +18,9 @@
 		5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B772A9B146500E87DE2 /* Track.swift */; };
 		5C1F6B7A2A9C816E00E87DE2 /* StateVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B792A9C816E00E87DE2 /* StateVector.swift */; };
 		5C1F6B7C2A9CEDB800E87DE2 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B7B2A9CEDB800E87DE2 /* Flight.swift */; };
+		5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */; };
+		5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */; };
+		5C1F6B832A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B822A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		5C1F6B772A9B146500E87DE2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		5C1F6B792A9C816E00E87DE2 /* StateVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVector.swift; sourceTree = "<group>"; };
 		5C1F6B7B2A9CEDB800E87DE2 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5C1F6B822A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyAPI_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1F6B5A2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift */,
+				5C1F6B822A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift */,
 			);
 			path = "OpenSky Flight TrackerTests";
 			sourceTree = "<group>";
@@ -139,8 +146,10 @@
 		5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */,
 				5C1F6B742A9B0D5800E87DE2 /* Models */,
 				5C1F6B752A9B0D6B00E87DE2 /* OpenSkyAPI.swift */,
+				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
 			);
 			path = OpenSkyAPI;
 			sourceTree = "<group>";
@@ -153,6 +162,14 @@
 				5C1F6B772A9B146500E87DE2 /* Track.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +307,8 @@
 				5C1F6B4C2A9B0D3300E87DE2 /* ContentView.swift in Sources */,
 				5C1F6B7C2A9CEDB800E87DE2 /* Flight.swift in Sources */,
 				5C1F6B4A2A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift in Sources */,
+				5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */,
+				5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */,
 				5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1F6B832A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift in Sources */,
 				5C1F6B5B2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

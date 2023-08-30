@@ -56,7 +56,7 @@ struct StateVector {
     let squawk: String?         // The transponder code
     let isSPI: Bool             // Whether flight status indicates Special Purpose Indicator
     let positionSource: PositionSource
-    let category: AircraftCategory
+    let category: AircraftCategory?
 
 }
 
@@ -84,13 +84,29 @@ extension StateVector: Decodable {
 
     init(from decoder: Decoder) throws {
         // Use and unkeyed container to decode the state-vector array
-        var container = try.decoder.unkeyedContainer()
+        var container   = try decoder.unkeyedContainer()
+        icao24          = try container.decode(String.self)
+        callsign        = try container.decodeIfPresent(String.self)
+        originCountry   = try container.decode(String.self)
+        timePosition    = try container.decodeIfPresent(Int.self)
+        lastContact     = try container.decode(Int.self)
+        longitude       = try container.decodeIfPresent(Float.self)
+        latitude        = try container.decodeIfPresent(Float.self)
+        altitude        = try container.decodeIfPresent(Float.self)
+        isOnGround      = try container.decode(Bool.self)
+        velocity        = try container.decodeIfPresent(Float.self)
+        trueTrack       = try container.decodeIfPresent(Float.self)
+        verticalRate    = try container.decodeIfPresent(Float.self)
+        sensors         = try container.decodeIfPresent([Int].self)
+        geoAltitude     = try container.decodeIfPresent(Float.self)
+        squawk          = try container.decodeIfPresent(String.self)
+        isSPI           = try container.decode(Bool.self)
+        positionSource  = try container.decode(PositionSource.self)
+        category        = try container.decodeIfPresent(AircraftCategory.self)
     }
 }
 
-struct StateVectors {
+struct StateVectors: Decodable {
     let time: Int   // The time that the state vectors in this response are associated with. Interval is [time-1, time].
     let states: [StateVector]
 }
-
-
