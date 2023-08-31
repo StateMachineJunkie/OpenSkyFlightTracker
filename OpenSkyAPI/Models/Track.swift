@@ -7,16 +7,18 @@
 
 import Foundation
 
-struct Waypoint {
-    let time: Int           // Seconds since (Unix) epoch
-    let latitude: Float?    // WGS-84 latitude in degrees
-    let longitude: Float?   // WGS-84 longitude in degrees
-    let altitude: Float?    // Barometric altitude in meters
-    let trueTrack: Float?   // Track in decimal degrees clockwise from north (north = 0º)
-    let isOnGround: Bool    // Indicates if the position was retrieved from a surface position report
+extension OpenSkyAPI {
+    struct Waypoint {
+        let time: Int           // Seconds since (Unix) epoch
+        let latitude: Float?    // WGS-84 latitude in degrees
+        let longitude: Float?   // WGS-84 longitude in degrees
+        let altitude: Float?    // Barometric altitude in meters
+        let trueTrack: Float?   // Track in decimal degrees clockwise from north (north = 0º)
+        let isOnGround: Bool    // Indicates if the position was retrieved from a surface position report
+    }
 }
 
-extension Waypoint: Codable {
+extension OpenSkyAPI.Waypoint: Codable {
     private enum CodingKeys: String, CodingKey {
         case time
         case latitude
@@ -27,15 +29,17 @@ extension Waypoint: Codable {
     }
 }
 
-struct Track {
-    let icao24: String      // ICAO 24-Bit address in lower-case hexadecimal
-    let startTime: Int      // Time of the first waypoint in seconds since (Unix) epoch
-    let endTime: Int        // Time of the last waypoint in seconds since (Unix) epoch
-    let callsign: String?   // Callsign (8 characters) that holds for the whole track.
-    let path: [Waypoint]
+extension OpenSkyAPI {
+    struct Track {
+        let icao24: String      // ICAO 24-Bit address in lower-case hexadecimal
+        let startTime: Int      // Time of the first waypoint in seconds since (Unix) epoch
+        let endTime: Int        // Time of the last waypoint in seconds since (Unix) epoch
+        let callsign: String?   // Callsign (8 characters) that holds for the whole track.
+        let path: [Waypoint]
+    }
 }
 
-extension Track: Codable {
+extension OpenSkyAPI.Track: Codable {
     private enum CodingKeys: String, CodingKey {
         case icao24
         case startTime

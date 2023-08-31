@@ -68,12 +68,3 @@ extension String {
         return accumulator
     }
 }
-
-struct ICAO24 {
-    let value: String
-
-    init?(icao24String: String) {
-        guard icao24String.isICAO24 else { return nil }
-        self.value = icao24String.lowercased()
-    }
-}

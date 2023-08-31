@@ -21,6 +21,13 @@
 		5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */; };
 		5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */; };
 		5C1F6B832A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B822A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift */; };
+		5C1F6B852A9FEEDB00E87DE2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */; };
+		5C1F6B872A9FF15D00E87DE2 /* ProdNetwork.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */; };
+		5C1F6B8A2A9FF1EE00E87DE2 /* MockNetwork.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B892A9FF1EE00E87DE2 /* MockNetwork.xcconfig */; };
+		5C1F6B942A9FFB8800E87DE2 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B932A9FFB8800E87DE2 /* all.json */; };
+		5C1F6B982AA03C8A00E87DE2 /* MockOpenSkyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B972AA03C8A00E87DE2 /* MockOpenSkyAPI.swift */; };
+		5C1F6B9D2AA0404E00E87DE2 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */; };
+		5C1F6B9F2AA040B600E87DE2 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,14 @@
 		5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5C1F6B822A9FCCE500E87DE2 /* OpenSkyAPI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyAPI_Tests.swift; sourceTree = "<group>"; };
+		5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProdNetwork.xcconfig; sourceTree = "<group>"; };
+		5C1F6B882A9FF19F00E87DE2 /* OpenSky-Flight-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OpenSky-Flight-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5C1F6B892A9FF1EE00E87DE2 /* MockNetwork.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MockNetwork.xcconfig; sourceTree = "<group>"; };
+		5C1F6B932A9FFB8800E87DE2 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		5C1F6B972AA03C8A00E87DE2 /* MockOpenSkyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOpenSkyAPI.swift; sourceTree = "<group>"; };
+		5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
+		5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +103,8 @@
 		5C1F6B3D2A9B0D3300E87DE2 = {
 			isa = PBXGroup;
 			children = (
+				5C1F6B892A9FF1EE00E87DE2 /* MockNetwork.xcconfig */,
+				5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */,
 				5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */,
 				5C1F6B482A9B0D3300E87DE2 /* OpenSky Flight Tracker */,
 				5C1F6B592A9B0D3400E87DE2 /* OpenSky Flight TrackerTests */,
@@ -109,6 +126,7 @@
 		5C1F6B482A9B0D3300E87DE2 /* OpenSky Flight Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				5C1F6B882A9FF19F00E87DE2 /* OpenSky-Flight-Tracker-Info.plist */,
 				5C1F6B492A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift */,
 				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
 				5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */,
@@ -146,9 +164,13 @@
 		5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */,
 				5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */,
+				5C1F6B972AA03C8A00E87DE2 /* MockOpenSkyAPI.swift */,
 				5C1F6B742A9B0D5800E87DE2 /* Models */,
 				5C1F6B752A9B0D6B00E87DE2 /* OpenSkyAPI.swift */,
+				5C1F6B8F2A9FF9EF00E87DE2 /* Resources */,
+				5C1F6B992AA03EAB00E87DE2 /* Utilities */,
 				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
 			);
 			path = OpenSkyAPI;
@@ -170,6 +192,39 @@
 				5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5C1F6B8F2A9FF9EF00E87DE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B902A9FFA8100E87DE2 /* api */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C1F6B902A9FFA8100E87DE2 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B912A9FFA8B00E87DE2 /* states */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		5C1F6B912A9FFA8B00E87DE2 /* states */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B932A9FFB8800E87DE2 /* all.json */,
+			);
+			path = states;
+			sourceTree = "<group>";
+		};
+		5C1F6B992AA03EAB00E87DE2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */,
+				5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +332,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1F6B512A9B0D3400E87DE2 /* Preview Assets.xcassets in Resources */,
+				5C1F6B872A9FF15D00E87DE2 /* ProdNetwork.xcconfig in Resources */,
+				5C1F6B8A2A9FF1EE00E87DE2 /* MockNetwork.xcconfig in Resources */,
+				5C1F6B942A9FFB8800E87DE2 /* all.json in Resources */,
 				5C1F6B4E2A9B0D3400E87DE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,12 +361,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1F6B7A2A9C816E00E87DE2 /* StateVector.swift in Sources */,
+				5C1F6B9D2AA0404E00E87DE2 /* LoggerExtension.swift in Sources */,
+				5C1F6B9F2AA040B600E87DE2 /* BundleExtension.swift in Sources */,
 				5C1F6B762A9B0D6B00E87DE2 /* OpenSkyAPI.swift in Sources */,
 				5C1F6B4C2A9B0D3300E87DE2 /* ContentView.swift in Sources */,
+				5C1F6B852A9FEEDB00E87DE2 /* Configuration.swift in Sources */,
 				5C1F6B7C2A9CEDB800E87DE2 /* Flight.swift in Sources */,
 				5C1F6B4A2A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift in Sources */,
 				5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */,
 				5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */,
+				5C1F6B982AA03C8A00E87DE2 /* MockOpenSkyAPI.swift in Sources */,
 				5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +411,7 @@
 /* Begin XCBuildConfiguration section */
 		5C1F6B682A9B0D3400E87DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -409,6 +472,7 @@
 		};
 		5C1F6B692A9B0D3400E87DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -472,6 +536,7 @@
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,6 +566,7 @@
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -595,6 +661,135 @@
 			};
 			name = Release;
 		};
+		5C1F6B8B2A9FF34800E87DE2 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1F6B892A9FF1EE00E87DE2 /* MockNetwork.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Mock;
+		};
+		5C1F6B8C2A9FF34800E87DE2 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenSky Flight Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 4887CWSKD9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Mock;
+		};
+		5C1F6B8D2A9FF34800E87DE2 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4887CWSKD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSky Flight Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSky Flight Tracker";
+			};
+			name = Mock;
+		};
+		5C1F6B8E2A9FF34800E87DE2 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4887CWSKD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenSky Flight Tracker";
+			};
+			name = Mock;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +797,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B682A9B0D3400E87DE2 /* Debug */,
+				5C1F6B8B2A9FF34800E87DE2 /* Mock */,
 				5C1F6B692A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -611,6 +807,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B6B2A9B0D3400E87DE2 /* Debug */,
+				5C1F6B8C2A9FF34800E87DE2 /* Mock */,
 				5C1F6B6C2A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -620,6 +817,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B6E2A9B0D3400E87DE2 /* Debug */,
+				5C1F6B8D2A9FF34800E87DE2 /* Mock */,
 				5C1F6B6F2A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -629,6 +827,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B712A9B0D3400E87DE2 /* Debug */,
+				5C1F6B8E2A9FF34800E87DE2 /* Mock */,
 				5C1F6B722A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

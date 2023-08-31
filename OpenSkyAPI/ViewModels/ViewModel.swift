@@ -8,12 +8,19 @@
 import Foundation
 
 class ViewModel: ObservableObject {
-    @Published var stateVectors = StateVectors(time: 0, states: [])
+    @Published var stateVectors = OpenSkyAPI.StateVectors(time: 0, states: [])
+    @Published var isLoadingData: Bool = false
 
+    @MainActor
     func loadData() {
+        guard isLoadingData == false else { return }
+        isLoadingData = true
         Task {
             let stateVectors = try await OpenSkyAPI.getAllStateVectors()
-            self.stateVectors = stateVectors
+            await MainActor.run {
+                self.stateVectors = stateVectors
+                isLoadingData = false
+            }
         }
     }
 }

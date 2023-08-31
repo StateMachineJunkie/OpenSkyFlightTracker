@@ -13,12 +13,47 @@ extension String: Error {}  // Remove before shipping
 //    case
 //}
 
+protocol OpenSkyServices {
+    static func getAllStateVectors(for transponders: [OpenSkyAPI.ICAO24]?,
+                                   at time: Int?,
+                                   in area: OpenSkyAPI.WGS84Area?,
+                                   with authentication: OpenSkyAPI.Authentication?,
+                                   includingCategory isIncludingCategory: Bool) async throws -> OpenSkyAPI.StateVectors
 
-struct OpenSkyAPI {
+    static func getOwnStateVectors(for transponders: [OpenSkyAPI.ICAO24]?,
+                                   at time: Int?,
+                                   filteredFor serials: [String]?,
+                                   with authentication: OpenSkyAPI.Authentication) async throws -> OpenSkyAPI.StateVectors
+
+    static func getAllFlights(in timeInterval: Range<Int>?) async throws -> [OpenSkyAPI.Flight]
+
+    static func getFlights(for aircraft: [OpenSkyAPI.ICAO24], in timeInterval: Range<Int>?) async throws -> [OpenSkyAPI.Flight]
+
+    static func getArrivals(at airport: String, in timeInterval: Range<Int>?) async throws -> [OpenSkyAPI.Flight]
+
+    static func getDepartures(from airport: String, in timeInterval: Range<Int>?) async throws -> [OpenSkyAPI.Flight]
+
+    static func getTrack(for transponder: OpenSkyAPI.ICAO24, at time: Int) async throws -> OpenSkyAPI.Track
+}
+
+struct OpenSkyAPI: OpenSkyServices {
+
     /// Some OpenSky API calls require authentication which consists of a simple username and password.
     struct Authentication {
         let username: String
         let password: String
+    }
+
+    /// Since these appear throughout the API and they have specific characteristics that distinguish them from a
+    /// standard `String`, I felt like it would be a good idea to make them their own type so that we can check them.
+    /// It should reduce the number of potential errors that would only show-up at runtime.
+    struct ICAO24: Codable {
+        let value: String
+
+        init?(icao24String: String) {
+            guard icao24String.isICAO24 else { return nil }
+            self.value = icao24String.lowercased()
+        }
     }
 
     /// Bounds for state-vector search.
@@ -29,6 +64,10 @@ struct OpenSkyAPI {
         let lomax: Float    // Maximum longitude
     }
 
+    private static let apiBaseURL: URL = {
+        return URL(string: "\(API.scheme)://\(API.baseURL)/")!
+    }()
+
     /// Get state-vectors for aircraft in the OpenSky network.
     ///
     /// - Parameters:
@@ -38,16 +77,16 @@ struct OpenSkyAPI {
     ///           for. If this parameter is not provided then the current time will be used in its place.
     ///   - area: If this parameter is included, then the query will only return results contained within the defined
     ///           bounding box of the given set of WGS84 coordinates.
-    ///   - includingCategory: Boolean indicating whether or not the aircraft category should be included with each
-    ///                        state-vector returned from this invocation.
     ///   - authentication: While authentication is not required to invoke this API call, if it is not included the
     ///                     results will be limited. See `Limitations` in the Original OpenSky API documentation.
+    ///   - includingCategory: Boolean indicating whether or not the aircraft category should be included with each
+    ///                        state-vector returned from this invocation.
     /// - Returns: A `StateVectors` value, which can be empty if no results were found to match the provided parameters.
     static func getAllStateVectors(for transponders: [ICAO24]? = nil,
                                    at time: Int? = nil,
                                    in area: WGS84Area? = nil,
-                                   includingCategory isIncludingCategory: Bool = false,
-                                   with authentication: Authentication? = nil) async throws -> StateVectors {
+                                   with authentication: Authentication? = nil,
+                                   includingCategory isIncludingCategory: Bool = false) async throws -> StateVectors {
         var params: [String : Any] = [:]
 
         if let transponders {
@@ -65,7 +104,8 @@ struct OpenSkyAPI {
         if isIncludingCategory {
             params["extended"] = 1
         }
-        let openSkyURL = URL(string: "https://opensky-network.org/api/states/all")!
+        let openSkyURL = URL(string: "states/all", relativeTo: apiBaseURL)!
+        //let openSkyURL = URL(string: "https://opensky-network.org/api/states/all")!
         let request = URLRequest(url: openSkyURL)
         let (data, response) = try await URLSession.shared.data(for: request)
         let statusCode = (response as! HTTPURLResponse).statusCode
@@ -79,7 +119,7 @@ struct OpenSkyAPI {
         }
     }
 
-    /// Get state-vectors for your won sensors without any rate limitations.
+    /// Get state-vectors for your own sensors without any rate limitations.
     ///
     /// - Parameters:
     ///   - transponders: An array containing one or more ICAO24 transponder addresses in lower-cased hexadecimal string

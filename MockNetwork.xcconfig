@@ -1,0 +1,12 @@
+//
+//  Prod.xcconfig
+//  OpenSky Flight Tracker
+//
+//  Created by Michael Crawford on 8/30/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = api
+API_SCHEME = file
