@@ -9,4 +9,3 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 API_BASE_URL = opensky-network.org/api
-API_SCHEME = https

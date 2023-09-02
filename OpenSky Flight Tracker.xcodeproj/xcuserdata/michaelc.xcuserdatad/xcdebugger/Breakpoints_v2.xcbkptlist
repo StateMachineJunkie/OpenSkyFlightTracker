@@ -14,72 +14,10 @@
             filePath = "OpenSkyAPI/ViewModels/ViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "loadData()"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "D0794E7B-8483-46DF-B18A-150AFF9AE06F - 2c49bfcda97243ad"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in OpenSky_Flight_Tracker.ViewModel.loadData() -&gt; ()"
-                  moduleName = "OpenSky Flight Tracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/ViewModels/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "D0794E7B-8483-46DF-B18A-150AFF9AE06F - 1c1cbf5e5f8182d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async throws -&gt; () in OpenSky_Flight_Tracker.ViewModel.loadData() -&gt; ()"
-                  moduleName = "OpenSky Flight Tracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/ViewModels/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "D0794E7B-8483-46DF-B18A-150AFF9AE06F - e170a1fd3bf78eaf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in OpenSky_Flight_Tracker.ViewModel.loadData() -&gt; ()"
-                  moduleName = "OpenSky Flight Tracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/ViewModels/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "D0794E7B-8483-46DF-B18A-150AFF9AE06F - 9d2f3bffa848f4ec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in closure #1 @Sendable () async throws -&gt; () in OpenSky_Flight_Tracker.ViewModel.loadData() -&gt; ()"
-                  moduleName = "OpenSky Flight Tracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/ViewModels/ViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -92,10 +30,10 @@
             filePath = "OpenSkyAPI/OpenSkyAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "getAllStateVectors(for:at:in:with:includingCategory:)"
-            landmarkType = "7">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "E110C610-B3B5-4B38-8E19-105F3201654B - e43ba3900f27cb4b"
@@ -155,10 +93,10 @@
             filePath = "OpenSkyAPI/OpenSkyAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "getAllStateVectors(for:at:in:with:includingCategory:)"
-            landmarkType = "7">
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "B4C32798-43E3-496D-B27B-5FB48B31E9DE - d0435e9ac96dfcc8"
@@ -203,10 +141,10 @@
             filePath = "OpenSkyAPI/OpenSkyAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "getAllStateVectors(for:at:in:with:includingCategory:)"
-            landmarkType = "7">
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -219,10 +157,10 @@
             filePath = "OpenSkyAPI/OpenSkyAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "getAllStateVectors(for:at:in:with:includingCategory:)"
-            landmarkType = "7">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "02AB3712-73BF-4C2A-A05F-372321A98A3E - f96253bdab562972"
@@ -268,6 +206,150 @@
                   startingLineNumber = "109"
                   endingLineNumber = "109"
                   offsetFromSymbolStart = "1996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5388C36-9BBF-489D-85C3-0F4C435D7EF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenSky Flight TrackerTests/OpenSkyService_Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "test_getAllStateVectors_with_area()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5388C36-9BBF-489D-85C3-0F4C435D7EF0 - d1fb6d84f179155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenSky_Flight_TrackerTests.OpenSkyService_Tests.test_getAllStateVectors_with_time() async throws -&gt; ()"
+                  moduleName = "OpenSky Flight TrackerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSky%20Flight%20TrackerTests/OpenSkyService_Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "F5388C36-9BBF-489D-85C3-0F4C435D7EF0 - 2918bbbdf327c7f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for OpenSky_Flight_TrackerTests.OpenSkyService_Tests.test_getAllStateVectors_with_area() async throws -&gt; ()"
+                  moduleName = "OpenSky Flight TrackerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSky%20Flight%20TrackerTests/OpenSkyService_Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "262400EB-62CD-493A-B105-05CA6E8123CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenSkyAPI/Services/GetAllStateVectors.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "invoke()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "262400EB-62CD-493A-B105-05CA6E8123CB - e1692a6264a74957"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenSky_Flight_Tracker.GetAllStateVectors.invoke() async throws -&gt; OpenSky_Flight_Tracker.OpenSkyService.StateVectors"
+                  moduleName = "OpenSky Flight Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/Services/GetAllStateVectors.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  uuid = "262400EB-62CD-493A-B105-05CA6E8123CB - f7e0da7b2e4965d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for OpenSky_Flight_Tracker.GetAllStateVectors.invoke() async throws -&gt; OpenSky_Flight_Tracker.OpenSkyService.StateVectors"
+                  moduleName = "OpenSky Flight Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/Services/GetAllStateVectors.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8DC4636-3B03-4E09-9BAD-2C474AF5CEEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenSkyAPI/Services/GetAllStateVectors.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "invoke()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8DC4636-3B03-4E09-9BAD-2C474AF5CEEB - 68cb4ed92baa0f1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for OpenSky_Flight_Tracker.GetAllStateVectors.invoke() async throws -&gt; OpenSky_Flight_Tracker.OpenSkyService.StateVectors"
+                  moduleName = "OpenSky Flight Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/Services/GetAllStateVectors.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1616">
+               </Location>
+               <Location
+                  uuid = "C8DC4636-3B03-4E09-9BAD-2C474AF5CEEB - 68cb4ed92baa0f1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for OpenSky_Flight_Tracker.GetAllStateVectors.invoke() async throws -&gt; OpenSky_Flight_Tracker.OpenSkyService.StateVectors"
+                  moduleName = "OpenSky Flight Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelc/Developer/Personal%20Projects/OpenSky%20Flight%20Tracker/OpenSkyAPI/Services/GetAllStateVectors.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1632">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension OpenSkyAPI {
+extension OpenSkyService {
 
-    struct Flight {
+    struct Flight: Equatable, Hashable {
         let icao24: ICAO24                  // Transponder address
         let firstSeen: Int                  // Time this flight was first seen in seconds since (Unix) epoch?
         let departureAirport: String?
@@ -25,7 +25,7 @@ extension OpenSkyAPI {
     }
 }
 
-extension OpenSkyAPI.Flight: Codable {
+extension OpenSkyService.Flight: Codable {
     private enum CodingKeys: String, CodingKey {
         case icao24
         case firstSeen

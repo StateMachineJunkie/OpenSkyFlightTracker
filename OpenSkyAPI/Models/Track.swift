@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension OpenSkyAPI {
-    struct Waypoint {
+extension OpenSkyService {
+    struct Waypoint: Hashable {
         let time: Int           // Seconds since (Unix) epoch
         let latitude: Float?    // WGS-84 latitude in degrees
         let longitude: Float?   // WGS-84 longitude in degrees
@@ -18,7 +18,7 @@ extension OpenSkyAPI {
     }
 }
 
-extension OpenSkyAPI.Waypoint: Codable {
+extension OpenSkyService.Waypoint: Codable {
     private enum CodingKeys: String, CodingKey {
         case time
         case latitude
@@ -29,8 +29,8 @@ extension OpenSkyAPI.Waypoint: Codable {
     }
 }
 
-extension OpenSkyAPI {
-    struct Track {
+extension OpenSkyService {
+    struct Track: Hashable {
         let icao24: String      // ICAO 24-Bit address in lower-case hexadecimal
         let startTime: Int      // Time of the first waypoint in seconds since (Unix) epoch
         let endTime: Int        // Time of the last waypoint in seconds since (Unix) epoch
@@ -39,7 +39,7 @@ extension OpenSkyAPI {
     }
 }
 
-extension OpenSkyAPI.Track: Codable {
+extension OpenSkyService.Track: Codable {
     private enum CodingKeys: String, CodingKey {
         case icao24
         case startTime

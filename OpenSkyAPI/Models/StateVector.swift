@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension OpenSkyAPI {
+extension OpenSkyService {
 
-    struct StateVector {
+    struct StateVector: Hashable {
         enum PositionSource: Int, Codable {
             case adsb       = 0     // ADS-B
             case asterix    = 1     // ASTERIX
@@ -59,10 +59,48 @@ extension OpenSkyAPI {
         let isSPI: Bool             // Whether flight status indicates Special Purpose Indicator
         let positionSource: PositionSource
         let category: AircraftCategory?
+
+        init(icao24: String,
+             callsign: String? = nil,
+             originCountry: String,
+             timePosition: Int? = nil,
+             lastContact: Int,
+             longitude: Float? = nil,
+             latitude: Float? = nil,
+             altitude: Float? = nil,
+             isOnGround: Bool = false,
+             velocity: Float? = nil,
+             trueTrack: Float? = nil,
+             verticalRate: Float? = nil,
+             sensors: [Int]? = nil,
+             geoAltitude: Float? = nil,
+             squawk: String? = nil,
+             isSPI: Bool = false,
+             positionSource: PositionSource,
+             category: AircraftCategory? = nil) {
+            self.icao24 = icao24
+            self.callsign = callsign
+            self.originCountry = originCountry
+            self.timePosition = timePosition
+            self.lastContact = lastContact
+            self.longitude = longitude
+            self.latitude = latitude
+            self.altitude = altitude
+            self.isOnGround = isOnGround
+            self.velocity = velocity
+            self.trueTrack = trueTrack
+            self.verticalRate = verticalRate
+            self.sensors = sensors
+            self.geoAltitude = geoAltitude
+            self.squawk = squawk
+            self.isSPI = isSPI
+            self.positionSource = positionSource
+            self.category = category
+        }
     }
 }
 
-extension OpenSkyAPI.StateVector: Decodable {
+extension OpenSkyService.StateVector: Decodable {
     private enum CodingKeys: String, CodingKey {
         case icao24
         case callsign
@@ -108,8 +146,8 @@ extension OpenSkyAPI.StateVector: Decodable {
     }
 }
 
-extension OpenSkyAPI {
-    struct StateVectors: Decodable {
+extension OpenSkyService {
+    struct StateVectors: Decodable, Equatable, Hashable {
         let time: Int   // The time that the state vectors in this response are associated with. Interval is [time-1, time].
         let states: [StateVector]
     }

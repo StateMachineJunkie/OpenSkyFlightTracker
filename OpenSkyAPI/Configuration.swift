@@ -33,8 +33,4 @@ enum API {
     static var baseURL: String {
         return try! Configuration.value(for: "API_BASE_URL")
     }
-
-    static var scheme: String {
-        return try! Configuration.value(for: "API_SCHEME")
-    }
 }

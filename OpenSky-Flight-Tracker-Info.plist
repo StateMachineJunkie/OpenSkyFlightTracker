@@ -4,7 +4,5 @@
 <dict>
 	<key>API_BASE_URL</key>
 	<string>$(API_BASE_URL)</string>
-	<key>API_SCHEME</key>
-	<string>$(API_SCHEME)</string>
 </dict>
 </plist>
