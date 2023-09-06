@@ -9,7 +9,7 @@ import Foundation
 
 extension Dictionary where Key == String, Value: Any {
     /// Converts all dictionary key/value pairs into query items.
-    /// - Note We only expect the four basic types (Bool, Int, Double, and String) to be used as parameters.
+    /// - Note We only expect the four basic types (Bool, Int, Double, Float, and String) to be used as parameters.
     ///        Any other type included in the parameter dictionary will be filtered out.
     public var queryItems: [URLQueryItem]? {
         guard count > 0 else { return nil }
@@ -20,6 +20,8 @@ extension Dictionary where Key == String, Value: Any {
             if let value = value as? String {
                 stringValue = value
             } else if let value = value as? Double {
+                stringValue = String(value)
+            } else if let value = value as? Float {
                 stringValue = String(value)
             } else if let value = value as? Int {
                 stringValue = String(value)
