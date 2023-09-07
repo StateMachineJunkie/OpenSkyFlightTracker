@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5C1F6B452A9B0D3300E87DE2"
-               BuildableName = "OpenSky Flight Tracker.app"
-               BlueprintName = "OpenSky Flight Tracker"
-               ReferencedContainer = "container:OpenSky Flight Tracker.xcodeproj">
+               BuildableName = "OpenSkyFlightTracker.app"
+               BlueprintName = "OpenSkyFlightTracker"
+               ReferencedContainer = "container:OpenSkyFlightTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5C1F6B552A9B0D3400E87DE2"
-               BuildableName = "OpenSky Flight TrackerTests.xctest"
-               BlueprintName = "OpenSky Flight TrackerTests"
-               ReferencedContainer = "container:OpenSky Flight Tracker.xcodeproj">
+               BuildableName = "OpenSkyFlightTrackerTests.xctest"
+               BlueprintName = "OpenSkyFlightTrackerTests"
+               ReferencedContainer = "container:OpenSkyFlightTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5C1F6B5F2A9B0D3400E87DE2"
-               BuildableName = "OpenSky Flight TrackerUITests.xctest"
-               BlueprintName = "OpenSky Flight TrackerUITests"
-               ReferencedContainer = "container:OpenSky Flight Tracker.xcodeproj">
+               BuildableName = "OpenSkyFlightTrackerUITests.xctest"
+               BlueprintName = "OpenSkyFlightTrackerUITests"
+               ReferencedContainer = "container:OpenSkyFlightTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C1F6B452A9B0D3300E87DE2"
-            BuildableName = "OpenSky Flight Tracker.app"
-            BlueprintName = "OpenSky Flight Tracker"
-            ReferencedContainer = "container:OpenSky Flight Tracker.xcodeproj">
+            BuildableName = "OpenSkyFlightTracker.app"
+            BlueprintName = "OpenSkyFlightTracker"
+            ReferencedContainer = "container:OpenSkyFlightTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C1F6B452A9B0D3300E87DE2"
-            BuildableName = "OpenSky Flight Tracker.app"
-            BlueprintName = "OpenSky Flight Tracker"
-            ReferencedContainer = "container:OpenSky Flight Tracker.xcodeproj">
+            BuildableName = "OpenSkyFlightTracker.app"
+            BlueprintName = "OpenSkyFlightTracker"
+            ReferencedContainer = "container:OpenSkyFlightTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

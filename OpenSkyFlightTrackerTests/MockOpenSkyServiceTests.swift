@@ -1,12 +1,12 @@
 //
-//  OpenSkyService_Tests.swift
+//  OpenSkyServiceTests.swift
 //  OpenSky Flight TrackerTests
 //
 //  Created by Michael Crawford on 8/30/23.
 //
 
 import XCTest
-@testable import OpenSky_Flight_Tracker
+@testable import OpenSkyFlightTracker
 
 final class MockOpenSkyServiceTests: XCTestCase {
 

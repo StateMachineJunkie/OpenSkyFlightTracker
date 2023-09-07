@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct OpenSky_Flight_TrackerApp: App {
+struct OpenSkyFlightTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

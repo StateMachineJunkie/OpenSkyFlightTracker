@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C1F6B4A2A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B492A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift */; };
+		5C1F6B4A2A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B492A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift */; };
 		5C1F6B4C2A9B0D3300E87DE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */; };
 		5C1F6B4E2A9B0D3400E87DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */; };
 		5C1F6B512A9B0D3400E87DE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B502A9B0D3400E87DE2 /* Preview Assets.xcassets */; };
-		5C1F6B5B2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B5A2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift */; };
+		5C1F6B5B2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B5A2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift */; };
 		5C1F6B652A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B642A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift */; };
 		5C1F6B672A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B662A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift */; };
 		5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B772A9B146500E87DE2 /* Track.swift */; };
@@ -61,14 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C1F6B462A9B0D3300E87DE2 /* OpenSky Flight Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenSky Flight Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C1F6B492A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerApp.swift; sourceTree = "<group>"; };
+		5C1F6B462A9B0D3300E87DE2 /* OpenSkyFlightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSkyFlightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1F6B492A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyFlightTrackerApp.swift; sourceTree = "<group>"; };
 		5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1F6B502A9B0D3400E87DE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5C1F6B562A9B0D3400E87DE2 /* OpenSky Flight TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenSky Flight TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C1F6B5A2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerTests.swift; sourceTree = "<group>"; };
-		5C1F6B602A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenSky Flight TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1F6B562A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSkyFlightTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1F6B5A2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyFlightTrackerTests.swift; sourceTree = "<group>"; };
+		5C1F6B602A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSkyFlightTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1F6B642A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerUITests.swift; sourceTree = "<group>"; };
 		5C1F6B662A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C1F6B772A9B146500E87DE2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		5C1F6B822A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOpenSkyServiceTests.swift; sourceTree = "<group>"; };
 		5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProdNetwork.xcconfig; sourceTree = "<group>"; };
-		5C1F6B882A9FF19F00E87DE2 /* OpenSky-Flight-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OpenSky-Flight-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5C1F6B882A9FF19F00E87DE2 /* OpenSkyFlightTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkyFlightTracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
 		5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		5C1F6BA12AA1013500E87DE2 /* OpenSkyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyService.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		5C1F6BB02AA42C6800E87DE2 /* GetOwnStateVectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOwnStateVectors.swift; sourceTree = "<group>"; };
 		5C7446722AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opensky_api_tracks_all_output.json; sourceTree = "<group>"; };
 		5CE1DA8F2AAA5C0A0060053A /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
-		5CF367C72AA90D8F0029D4CE /* OpenSky-Flight-TrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OpenSky-Flight-TrackerTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5CF367C72AA90D8F0029D4CE /* OpenSkyFlightTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkyFlightTrackerTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5CF3BC3D2AA76F8200E83083 /* GetAllFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllFlights.swift; sourceTree = "<group>"; };
 		5CF3BC3F2AA7823E00E83083 /* GetFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlights.swift; sourceTree = "<group>"; };
 		5CF3BC412AA7A32400E83083 /* GetArrivals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetArrivals.swift; sourceTree = "<group>"; };
@@ -132,9 +132,9 @@
 			children = (
 				5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */,
 				5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */,
-				5C1F6B482A9B0D3300E87DE2 /* OpenSky Flight Tracker */,
-				5C1F6B592A9B0D3400E87DE2 /* OpenSky Flight TrackerTests */,
-				5C1F6B632A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests */,
+				5C1F6B482A9B0D3300E87DE2 /* OpenSkyFlightTracker */,
+				5C1F6B592A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests */,
+				5C1F6B632A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests */,
 				5C1F6B472A9B0D3300E87DE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,23 +142,23 @@
 		5C1F6B472A9B0D3300E87DE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C1F6B462A9B0D3300E87DE2 /* OpenSky Flight Tracker.app */,
-				5C1F6B562A9B0D3400E87DE2 /* OpenSky Flight TrackerTests.xctest */,
-				5C1F6B602A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests.xctest */,
+				5C1F6B462A9B0D3300E87DE2 /* OpenSkyFlightTracker.app */,
+				5C1F6B562A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.xctest */,
+				5C1F6B602A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C1F6B482A9B0D3300E87DE2 /* OpenSky Flight Tracker */ = {
+		5C1F6B482A9B0D3300E87DE2 /* OpenSkyFlightTracker */ = {
 			isa = PBXGroup;
 			children = (
-				5C1F6B882A9FF19F00E87DE2 /* OpenSky-Flight-Tracker-Info.plist */,
-				5C1F6B492A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift */,
+				5C1F6B882A9FF19F00E87DE2 /* OpenSkyFlightTracker-Info.plist */,
+				5C1F6B492A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift */,
 				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
 				5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */,
 				5C1F6B4F2A9B0D3400E87DE2 /* Preview Content */,
 			);
-			path = "OpenSky Flight Tracker";
+			path = OpenSkyFlightTracker;
 			sourceTree = "<group>";
 		};
 		5C1F6B4F2A9B0D3400E87DE2 /* Preview Content */ = {
@@ -169,25 +169,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5C1F6B592A9B0D3400E87DE2 /* OpenSky Flight TrackerTests */ = {
+		5C1F6B592A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
 				5C1F6B822A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift */,
 				5C1F6BA92AA14B8B00E87DE2 /* Mocks */,
-				5C1F6B5A2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift */,
-				5CF367C72AA90D8F0029D4CE /* OpenSky-Flight-TrackerTests-Info.plist */,
+				5C1F6B5A2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift */,
+				5CF367C72AA90D8F0029D4CE /* OpenSkyFlightTrackerTests-Info.plist */,
 				5CF3BC4A2AA909AB00E83083 /* OpenSkyServiceTests.swift */,
 			);
-			path = "OpenSky Flight TrackerTests";
+			path = OpenSkyFlightTrackerTests;
 			sourceTree = "<group>";
 		};
-		5C1F6B632A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests */ = {
+		5C1F6B632A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5C1F6B642A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift */,
 				5C1F6B662A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift */,
 			);
-			path = "OpenSky Flight TrackerUITests";
+			path = OpenSkyFlightTrackerUITests;
 			sourceTree = "<group>";
 		};
 		5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */ = {
@@ -271,9 +271,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C1F6B452A9B0D3300E87DE2 /* OpenSky Flight Tracker */ = {
+		5C1F6B452A9B0D3300E87DE2 /* OpenSkyFlightTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C1F6B6A2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight Tracker" */;
+			buildConfigurationList = 5C1F6B6A2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTracker" */;
 			buildPhases = (
 				5C1F6B422A9B0D3300E87DE2 /* Sources */,
 				5C1F6B432A9B0D3300E87DE2 /* Frameworks */,
@@ -283,14 +283,14 @@
 			);
 			dependencies = (
 			);
-			name = "OpenSky Flight Tracker";
+			name = OpenSkyFlightTracker;
 			productName = "OpenSky Flight Tracker";
-			productReference = 5C1F6B462A9B0D3300E87DE2 /* OpenSky Flight Tracker.app */;
+			productReference = 5C1F6B462A9B0D3300E87DE2 /* OpenSkyFlightTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C1F6B552A9B0D3400E87DE2 /* OpenSky Flight TrackerTests */ = {
+		5C1F6B552A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C1F6B6D2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight TrackerTests" */;
+			buildConfigurationList = 5C1F6B6D2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTrackerTests" */;
 			buildPhases = (
 				5C1F6B522A9B0D3400E87DE2 /* Sources */,
 				5C1F6B532A9B0D3400E87DE2 /* Frameworks */,
@@ -301,14 +301,14 @@
 			dependencies = (
 				5C1F6B582A9B0D3400E87DE2 /* PBXTargetDependency */,
 			);
-			name = "OpenSky Flight TrackerTests";
+			name = OpenSkyFlightTrackerTests;
 			productName = "OpenSky Flight TrackerTests";
-			productReference = 5C1F6B562A9B0D3400E87DE2 /* OpenSky Flight TrackerTests.xctest */;
+			productReference = 5C1F6B562A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5C1F6B5F2A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests */ = {
+		5C1F6B5F2A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C1F6B702A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight TrackerUITests" */;
+			buildConfigurationList = 5C1F6B702A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTrackerUITests" */;
 			buildPhases = (
 				5C1F6B5C2A9B0D3400E87DE2 /* Sources */,
 				5C1F6B5D2A9B0D3400E87DE2 /* Frameworks */,
@@ -319,9 +319,9 @@
 			dependencies = (
 				5C1F6B622A9B0D3400E87DE2 /* PBXTargetDependency */,
 			);
-			name = "OpenSky Flight TrackerUITests";
+			name = OpenSkyFlightTrackerUITests;
 			productName = "OpenSky Flight TrackerUITests";
-			productReference = 5C1F6B602A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests.xctest */;
+			productReference = 5C1F6B602A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +347,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C1F6B412A9B0D3300E87DE2 /* Build configuration list for PBXProject "OpenSky Flight Tracker" */;
+			buildConfigurationList = 5C1F6B412A9B0D3300E87DE2 /* Build configuration list for PBXProject "OpenSkyFlightTracker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -360,9 +360,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C1F6B452A9B0D3300E87DE2 /* OpenSky Flight Tracker */,
-				5C1F6B552A9B0D3400E87DE2 /* OpenSky Flight TrackerTests */,
-				5C1F6B5F2A9B0D3400E87DE2 /* OpenSky Flight TrackerUITests */,
+				5C1F6B452A9B0D3300E87DE2 /* OpenSkyFlightTracker */,
+				5C1F6B552A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests */,
+				5C1F6B5F2A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -413,7 +413,7 @@
 				5C1F6BA42AA1058800E87DE2 /* GetAllStateVectors.swift in Sources */,
 				5C1F6BA62AA1132C00E87DE2 /* StringExtension.swift in Sources */,
 				5CF3BC422AA7A32400E83083 /* GetArrivals.swift in Sources */,
-				5C1F6B4A2A9B0D3300E87DE2 /* OpenSky_Flight_TrackerApp.swift in Sources */,
+				5C1F6B4A2A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift in Sources */,
 				5C1F6BA22AA1013500E87DE2 /* OpenSkyService.swift in Sources */,
 				5CF3BC402AA7823E00E83083 /* GetFlights.swift in Sources */,
 				5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */,
@@ -433,7 +433,7 @@
 			files = (
 				5C1F6B832A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift in Sources */,
 				5CF3BC4B2AA909AB00E83083 /* OpenSkyServiceTests.swift in Sources */,
-				5C1F6B5B2A9B0D3400E87DE2 /* OpenSky_Flight_TrackerTests.swift in Sources */,
+				5C1F6B5B2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift in Sources */,
 				5C1F6BAB2AA14BA600E87DE2 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,12 +452,12 @@
 /* Begin PBXTargetDependency section */
 		5C1F6B582A9B0D3400E87DE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5C1F6B452A9B0D3300E87DE2 /* OpenSky Flight Tracker */;
+			target = 5C1F6B452A9B0D3300E87DE2 /* OpenSkyFlightTracker */;
 			targetProxy = 5C1F6B572A9B0D3400E87DE2 /* PBXContainerItemProxy */;
 		};
 		5C1F6B622A9B0D3400E87DE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5C1F6B452A9B0D3300E87DE2 /* OpenSky Flight Tracker */;
+			target = 5C1F6B452A9B0D3300E87DE2 /* OpenSkyFlightTracker */;
 			targetProxy = 5C1F6B612A9B0D3400E87DE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -586,11 +586,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OpenSky Flight Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpenSkyFlightTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
+				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -601,7 +601,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.OpenSkyFlightTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -616,11 +616,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OpenSky Flight Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpenSkyFlightTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
+				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -631,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.OpenSkyFlightTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -648,7 +648,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-TrackerTests-Info.plist";
+				INFOPLIST_FILE = "OpenSkyFlightTrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -657,7 +657,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSky Flight Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSky Flight Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSkyFlightTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSkyFlightTracker";
 			};
 			name = Debug;
 		};
@@ -670,7 +670,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-TrackerTests-Info.plist";
+				INFOPLIST_FILE = "OpenSkyFlightTrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -679,7 +679,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSky Flight Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSky Flight Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSkyFlightTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSkyFlightTracker";
 			};
 			name = Release;
 		};
@@ -719,174 +719,40 @@
 			};
 			name = Release;
 		};
-		5C1F6B8B2A9FF34800E87DE2 /* Mock */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Mock;
-		};
-		5C1F6B8C2A9FF34800E87DE2 /* Mock */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OpenSky Flight Tracker/Preview Content\"";
-				DEVELOPMENT_TEAM = 4887CWSKD9;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-Tracker-Info.plist";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-Tracker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Mock;
-		};
-		5C1F6B8D2A9FF34800E87DE2 /* Mock */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4887CWSKD9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OpenSky-Flight-TrackerTests-Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSky Flight Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSky Flight Tracker";
-			};
-			name = Mock;
-		};
-		5C1F6B8E2A9FF34800E87DE2 /* Mock */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4887CWSKD9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "OpenSky Flight Tracker";
-			};
-			name = Mock;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C1F6B412A9B0D3300E87DE2 /* Build configuration list for PBXProject "OpenSky Flight Tracker" */ = {
+		5C1F6B412A9B0D3300E87DE2 /* Build configuration list for PBXProject "OpenSkyFlightTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B682A9B0D3400E87DE2 /* Debug */,
-				5C1F6B8B2A9FF34800E87DE2 /* Mock */,
 				5C1F6B692A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C1F6B6A2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight Tracker" */ = {
+		5C1F6B6A2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B6B2A9B0D3400E87DE2 /* Debug */,
-				5C1F6B8C2A9FF34800E87DE2 /* Mock */,
 				5C1F6B6C2A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C1F6B6D2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight TrackerTests" */ = {
+		5C1F6B6D2A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B6E2A9B0D3400E87DE2 /* Debug */,
-				5C1F6B8D2A9FF34800E87DE2 /* Mock */,
 				5C1F6B6F2A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C1F6B702A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSky Flight TrackerUITests" */ = {
+		5C1F6B702A9B0D3400E87DE2 /* Build configuration list for PBXNativeTarget "OpenSkyFlightTrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1F6B712A9B0D3400E87DE2 /* Debug */,
-				5C1F6B8E2A9FF34800E87DE2 /* Mock */,
 				5C1F6B722A9B0D3400E87DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

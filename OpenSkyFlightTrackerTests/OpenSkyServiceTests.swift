@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import OpenSky_Flight_Tracker
+@testable import OpenSkyFlightTracker
 
 final class OpenSkyServiceTests: XCTestCase {
 

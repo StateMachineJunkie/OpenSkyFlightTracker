@@ -44,8 +44,8 @@ extension OpenSkyService {
         let icao24: String          // Transponder address in hexadecimal string representation
         let callsign: String?       // Callsign of the vehicle (8 characters); null if no callsign received
         let originCountry: String   // Country name inferred from the ICAO
-        let timePosition: Int?      // Unix timestamp (seconds) for the last position update
-        let lastContact: Int        // Unix timestamp (seconds) for the last update in general
+        let timePosition: UInt?     // Unix timestamp (seconds) for the last position update
+        let lastContact: UInt       // Unix timestamp (seconds) for the last update in general
         let longitude: Float?       // WGS-84 longitude in decimal degrees
         let latitude: Float?        // WGS-84 latitude in decimal degrees
         let altitude: Float?        // Barometric altitude in meters
@@ -63,8 +63,8 @@ extension OpenSkyService {
         init(icao24: String,
              callsign: String? = nil,
              originCountry: String,
-             timePosition: Int? = nil,
-             lastContact: Int,
+             timePosition: UInt? = nil,
+             lastContact: UInt,
              longitude: Float? = nil,
              latitude: Float? = nil,
              altitude: Float? = nil,
@@ -128,8 +128,8 @@ extension OpenSkyService.StateVector: Decodable {
         icao24          = try container.decode(String.self)
         callsign        = try container.decodeIfPresent(String.self)
         originCountry   = try container.decode(String.self)
-        timePosition    = try container.decodeIfPresent(Int.self)
-        lastContact     = try container.decode(Int.self)
+        timePosition    = try container.decodeIfPresent(UInt.self)
+        lastContact     = try container.decode(UInt.self)
         longitude       = try container.decodeIfPresent(Float.self)
         latitude        = try container.decodeIfPresent(Float.self)
         altitude        = try container.decodeIfPresent(Float.self)
@@ -148,7 +148,7 @@ extension OpenSkyService.StateVector: Decodable {
 
 extension OpenSkyService {
     struct StateVectors: Decodable, Equatable, Hashable {
-        let time: Int   // The time that the state vectors in this response are associated with. Interval is [time-1, time].
+        let time: UInt  // The time that the state vectors in this response are associated with. Interval is [time-1, time].
         let states: [StateVector]
     }
 }
