@@ -30,7 +30,7 @@ class GetDepartures: OpenSkyService {
         60 * 60 * 24 * 7    // Override default with a value of 7 days for this interval.
     }
 
-    init(at airport: String, in timeInterval: ClosedRange<UInt>) throws {
+    init(from airport: String, in timeInterval: ClosedRange<UInt>) throws {
         // TODO: Consider adding verification for the ICAO parameter
         self.airport = airport
         self.timeInterval = timeInterval
@@ -46,7 +46,7 @@ class GetDepartures: OpenSkyService {
         ]
 
         let queryItems: [URLQueryItem] = params.queryItems!
-        let url = URL(string: "flights/departures", relativeTo: OpenSkyService.apiBaseURL)!
+        let url = URL(string: "flights/departure", relativeTo: OpenSkyService.apiBaseURL)!
         let request: URLRequest
 
         if let authentication {

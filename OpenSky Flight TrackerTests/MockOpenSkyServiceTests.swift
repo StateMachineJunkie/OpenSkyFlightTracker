@@ -8,7 +8,7 @@
 import XCTest
 @testable import OpenSky_Flight_Tracker
 
-final class OpenSkyService_Tests: XCTestCase {
+final class MockOpenSkyServiceTests: XCTestCase {
 
     // We just want to execute this code once regardless of the number of tests associated with this class.
     private static var sut: URLSession = {
@@ -22,7 +22,7 @@ final class OpenSkyService_Tests: XCTestCase {
     }()
 
     override func setUpWithError() throws {
-        print("System under test: \(OpenSkyService_Tests.sut)")
+        print("System under test: \(MockOpenSkyServiceTests.sut)")
     }
 
     override func tearDownWithError() throws {
@@ -162,21 +162,25 @@ final class OpenSkyService_Tests: XCTestCase {
         assertEqualStateVectors(expectedStateVector, stateVectors.states[0])
     }
 
-    func test_getAllStateVectors_with_area() async throws {
-        let service = GetAllStateVectors()
-        let area = OpenSkyService.WGS84Area(lamin: 31.64, lomin: -114.40, lamax: 37.0, lomax: -109.21)
-        service.area = area
-        let auth = OpenSkyService.Authentication(username: "StateMachineJunkie", password: "zufqak-borvax-revvU4")
-        service.authentication = auth
-        service.isIncludingCategory = true
-        let stateVectors = try await service.invoke()
-        print(stateVectors)
-        print("Found \(stateVectors.states.count) aircraft")
-    }
+    func test_getAllTracks() async throws {
+        // Arrange
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: "2.0", headerFields: nil)!
+            let data = try MockURLProtocol.loadJSONResource(named: "opensky_api_tracks_all_output")
+            return (data, response)
+        }
 
-    func test_getAllStateVectors_with_time() async throws {}
-    func test_getAllStateVectors_includingCategory() async throws {}
-    func test_getAllStateVectors_with_authentication() async throws {}
+        // Act
+        let service = try GetTracks(for: OpenSkyService.ICAO24(icao24String: "0ac382")!)
+        let track = try await service.invoke()
+
+        // Assert
+        XCTAssertEqual(track.icao24, "0ac382")
+        XCTAssertEqual(track.callsign, "HK5220  ")
+        XCTAssertEqual(track.startTime, 1694114383)
+        XCTAssertEqual(track.endTime, 1694115007)
+        XCTAssertEqual(track.path.count, 40)
+    }
 
     private func assertEqualStateVectors(_ lhs: OpenSkyService.StateVector,
                                          _ rhs: OpenSkyService.StateVector,

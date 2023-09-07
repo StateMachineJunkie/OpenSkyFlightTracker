@@ -60,7 +60,7 @@ public class OpenSkyService: NSObject {
     internal func validateOpenSkyTimeInterval(_ timeInterval: ClosedRange<UInt>) throws {
         let delta = timeInterval.upperBound - timeInterval.lowerBound
         guard
-            delta > 0,
+            delta >= 0,
             delta <= maxTimeInterval else {
             throw Error.invalidTimeParameter
         }

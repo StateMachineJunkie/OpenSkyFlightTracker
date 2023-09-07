@@ -21,15 +21,17 @@ class GetAllFlights: OpenSkyService {
 
     private let logger = Logger.logger(for: GetAllFlights.self)
 
-    init(with timeInterval: ClosedRange<UInt>) throws {
+    init(within timeInterval: ClosedRange<UInt>) throws {
         self.timeInterval = timeInterval
         super.init()
         try validateOpenSkyTimeInterval(timeInterval)
     }
 
     func invoke() async throws -> [OpenSkyService.Flight] {
-        var params: [String : Any] = [:]
-        params["time"] = time
+        let params: [String : Any] = [
+            "begin" : String(timeInterval.lowerBound),
+            "end" : String(timeInterval.upperBound)
+        ]
 
         let queryItems = params.queryItems!
 

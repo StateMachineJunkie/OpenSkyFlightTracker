@@ -49,12 +49,12 @@ class GetTracks: OpenSkyService {
 
     func invoke() async throws -> OpenSkyService.Track {
         let params: [String : Any] = [
-            "icao24" : transponder,
+            "icao24" : transponder.value,
             "time" : String(time)
         ]
 
         let queryItems: [URLQueryItem] = params.queryItems!
-        let url = URL(string: "tracks", relativeTo: OpenSkyService.apiBaseURL)!
+        let url = URL(string: "tracks/all", relativeTo: OpenSkyService.apiBaseURL)!
         let request: URLRequest
 
         if let authentication {
