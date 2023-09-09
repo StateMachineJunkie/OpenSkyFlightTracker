@@ -152,11 +152,13 @@
 		5C1F6B482A9B0D3300E87DE2 /* OpenSkyFlightTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */,
+				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
 				5C1F6B882A9FF19F00E87DE2 /* OpenSkyFlightTracker-Info.plist */,
 				5C1F6B492A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift */,
-				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
-				5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */,
 				5C1F6B4F2A9B0D3400E87DE2 /* Preview Content */,
+				5CDC0BD92AAD2CD40000047C /* Utilities */,
+				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
 			);
 			path = OpenSkyFlightTracker;
 			sourceTree = "<group>";
@@ -194,11 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				5C1F6BA02AA1011700E87DE2 /* Services */,
-				5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */,
 				5C1F6B742A9B0D5800E87DE2 /* Models */,
 				5C1F6B8F2A9FF9EF00E87DE2 /* Resources */,
 				5C1F6B992AA03EAB00E87DE2 /* Utilities */,
-				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
 			);
 			path = OpenSkyAPI;
 			sourceTree = "<group>";
@@ -266,6 +266,14 @@
 				5C1F6BAA2AA14BA600E87DE2 /* MockURLProtocol.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5CDC0BD92AAD2CD40000047C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
