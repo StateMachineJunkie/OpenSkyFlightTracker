@@ -8,6 +8,5 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-API_BASE_URL = opensky-network.org/api
 //API_USERNAME = (Add your username here)
 //API_PASSWORD = (Add your password here)

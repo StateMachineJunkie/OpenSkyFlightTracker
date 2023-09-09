@@ -50,8 +50,8 @@ public class OpenSkyService: NSObject {
         let lomax: Float    // Maximum longitude
     }
 
-    public static let apiBaseURL: URL = {
-        return URL(string: "https://\(API.baseURL)/")!
+    internal static let apiBaseURL: URL = {
+        return URL(string: "https://opensky-network.org/api/")!
     }()
 
     public static var session: URLSession = {

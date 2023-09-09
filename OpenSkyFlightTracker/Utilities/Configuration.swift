@@ -30,10 +30,6 @@ enum Configuration {
 }
 
 enum API {
-    static var baseURL: String {
-        return try! Configuration.value(for: "API_BASE_URL")
-    }
-
     static var username: String? {
         return try? Configuration.value(for: "API_USERNAME")
     }
