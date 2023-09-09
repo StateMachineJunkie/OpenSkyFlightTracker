@@ -8,7 +8,7 @@
 import Foundation
 
 extension OpenSkyService {
-    struct ErrorModel: Codable, Equatable, Hashable {
+    public struct ErrorModel: Codable, Equatable, Hashable {
         let timestamp: UInt
         let status: Int
         let error: String

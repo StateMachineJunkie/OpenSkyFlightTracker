@@ -21,6 +21,7 @@ public class OpenSkyService: NSObject {
         case httpUnexpectedStatus(Int)
         case invalidTimeParameter
         case invalidTransponderParameter
+        case httpErrorResponse(ErrorModel)
     }
 
     /// Some OpenSky API calls require authentication which consists of a simple username and password.
@@ -70,9 +71,15 @@ public class OpenSkyService: NSObject {
         let (data, response) = try await OpenSkyService.session.data(for: request)
         let httpResponse = response as! HTTPURLResponse
         guard httpResponse.statusCode == 200 else {
-            throw httpResponse.statusCode.mappedToError
+            if let errorModel = try? JSONDecoder().decode(OpenSkyService.ErrorModel.self, from: data) {
+                // I did not learn about the error payload being returned when the HTTP request fails until I
+                // started testing. It is not mentioned in the documentation. In fact, the documentation only
+                // mentions empty response bodies on failures. Thus, I added this after the fact.
+                throw OpenSkyService.Error.httpErrorResponse(errorModel)
+            } else {
+                throw httpResponse.statusCode.mappedToError
+            }
         }
-
         return try JSONDecoder().decode(T.self, from: data)
     }
 }
