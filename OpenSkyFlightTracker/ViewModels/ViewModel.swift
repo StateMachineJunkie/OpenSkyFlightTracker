@@ -10,7 +10,7 @@ import MapKit
 import OpenSkyAPI
 import os.log
 
-class ViewModel: ObservableObject {
+@Observable class ViewModel {
     private var locationProvider: CLLocationProvider
     private let logger = Logger.logger(for: CLLocationProvider.self)
 
@@ -18,11 +18,36 @@ class ViewModel: ObservableObject {
         case idle, loadingData, error(Error)
     }
 
-    @Published var stateVectors = OpenSkyService.StateVectors(time: 0, states: [])
-    @Published var state: State = .idle
-    @Published var locationInfo = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
-                                                     latitudinalMeters: 200_000,
-                                                     longitudinalMeters: 200_000)
+    enum Filter: Int, CaseIterable {
+        case all, onGround, airborne
+    }
+
+    private(set) var filteredStateVectors = OpenSkyService.StateVectors.empty
+    private(set) var locationInfo = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
+                                                       latitudinalMeters: 200_000,
+                                                       longitudinalMeters: 200_000)
+    private(set) var selectedStateVector: OpenSkyService.StateVector?
+    private(set) var selectedTrack: OpenSkyService.Track?
+    private(set) var state: State = .idle {
+        didSet {
+            switch (state, oldValue) {
+            case (.idle, .idle), (.loadingData, .loadingData), (.error, .error):
+                return
+            case (.loadingData, _):
+                resetSelectionState()
+            default:
+                break
+            }
+        }
+    }
+    private(set) var stateVectors: OpenSkyService.StateVectors = .empty
+
+    var filter: Filter = .all {
+        didSet {
+            guard filter != oldValue else { return }
+            applyFilter()
+        }
+    }
 
     var isLoadingData: Bool {
         if case .loadingData = state {
@@ -39,7 +64,7 @@ class ViewModel: ObservableObject {
     func loadData(for area: OpenSkyService.WGS84Area? = nil) {
         switch state {
         case .loadingData:
-            logger.debug("Duplicate loadData request!")
+            logger.debug("Load operation already in progress!")
             return
         default:
             break
@@ -64,6 +89,7 @@ class ViewModel: ObservableObject {
                     self.locationInfo = region
                     logger.debug("Updated state vectors: \(String(describing: stateVectors))")
                     self.stateVectors = stateVectors
+                    applyFilter()
                     state = .idle
                 }
             } catch {
@@ -73,6 +99,75 @@ class ViewModel: ObservableObject {
                 }
             }
         }
+    }
+
+    @MainActor
+    func loadTrack(for aircraft: OpenSkyService.ICAO24) {
+        switch state {
+        case .loadingData:
+            logger.debug("Load operation already in progress!")
+            return
+        default:
+            break
+        }
+
+        state = .loadingData
+        Task {
+            do {
+                let service = try GetTracks(for: aircraft)
+                let track = try await service.invoke()
+                await MainActor.run {
+                    logger.debug("Track for \(aircraft.description): \(String(describing: track))")
+                    self.selectedTrack = track
+                    state = .idle
+                }
+            } catch {
+                logger.error("Failed to fetch track for \(aircraft.description) from OpenSky Network. \(error.localizedDescription)")
+                await MainActor.run {
+                    state = .error(error)
+                }
+            }
+        }
+    }
+
+    func selectStateVector(with transponder: String?) {
+        if let transponder {
+            // Filter duplicates
+            guard selectedStateVector == nil || transponder != selectedStateVector!.icao24 else { return }
+
+            // Continue with selection of new state-vector
+            let stateVector = filteredStateVectors.states.filter({ $0.icao24 == transponder }).first
+            logger.debug("Found \(String(describing: stateVector))")
+            self.selectedStateVector = stateVector
+        } else {
+            if selectedStateVector != nil {
+                selectedStateVector = nil
+            }
+        }
+
+        if selectedTrack != nil {
+            selectedTrack = nil
+        }
+    }
+
+    private func applyFilter() {
+        if stateVectors.isEmpty && !filteredStateVectors.isEmpty {
+            filteredStateVectors = .empty
+            return
+        }
+
+        switch filter {
+        case .airborne:
+            filteredStateVectors = OpenSkyService.StateVectors(time: stateVectors.time, states: stateVectors.states.filter { $0.isOnGround == false })
+        case .all:
+            filteredStateVectors = stateVectors
+        case .onGround:
+            filteredStateVectors = OpenSkyService.StateVectors(time: stateVectors.time, states: stateVectors.states.filter { $0.isOnGround })
+        }
+    }
+
+    private func resetSelectionState() {
+        selectedTrack = nil
     }
 }
 
@@ -106,6 +201,10 @@ extension OpenSkyService.StateVector: CustomStringConvertible {
 
         if let velocity {
             result.append(" V: \(velocity)m/sec")
+        }
+
+        if let trueTrack {
+            result.append(" T: \(UInt(round(trueTrack)))º")
         }
 
         return result

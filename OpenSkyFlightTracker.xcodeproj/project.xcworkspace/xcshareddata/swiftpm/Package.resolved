@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "openskyapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StateMachineJunkie/OpenSkyAPI.git",
+      "state" : {
+        "revision" : "b0d1ba47b3208efdb0d54c3dcff36d1d54262269",
+        "version" : "1.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}
