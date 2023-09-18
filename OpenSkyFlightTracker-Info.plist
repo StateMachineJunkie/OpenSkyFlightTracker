@@ -6,5 +6,20 @@
 	<string>$(API_PASSWORD)</string>
 	<key>API_USERNAME</key>
 	<string>$(API_USERNAME)</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModePlane</string>
+	</array>
 </dict>
 </plist>

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+    @State var viewModel: ViewModel
 
     var body: some View {
         VStack {
             if viewModel.isLoadingData {
                 ActivityIndicatorView()
             } else {
-                HelloWorldView()
+                MapView(stateVectors: viewModel.stateVectors)
             }
         }
         .padding()
@@ -34,19 +34,8 @@ struct ActivityIndicatorView: View {
     }
 }
 
-struct HelloWorldView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: ViewModel(with: CLLocationProvider()))
     }
 }

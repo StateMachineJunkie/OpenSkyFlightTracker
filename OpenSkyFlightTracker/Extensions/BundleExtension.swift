@@ -1,8 +1,11 @@
+// 
+// BundleExtension.swift
+// OpenSkyFlightTracker
 //
-//  BundleExtension.swift
-//  OpenSky Flight Tracker
+// Created by Michael Crawford on 9/17/23.
+// Using Swift 5.0
 //
-//  Created by Michael Crawford on 8/30/23.
+// Copyright © 2021 Crawford Design Engineering, LLC. All rights reserved.
 //
 
 import Foundation

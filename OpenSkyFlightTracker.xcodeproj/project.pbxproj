@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,32 +14,17 @@
 		5C1F6B5B2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B5A2A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests.swift */; };
 		5C1F6B652A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B642A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift */; };
 		5C1F6B672A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B662A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift */; };
-		5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B772A9B146500E87DE2 /* Track.swift */; };
-		5C1F6B7A2A9C816E00E87DE2 /* StateVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B792A9C816E00E87DE2 /* StateVector.swift */; };
-		5C1F6B7C2A9CEDB800E87DE2 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B7B2A9CEDB800E87DE2 /* Flight.swift */; };
-		5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */; };
 		5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */; };
 		5C1F6B832A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B822A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift */; };
 		5C1F6B852A9FEEDB00E87DE2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */; };
 		5C1F6B872A9FF15D00E87DE2 /* ProdNetwork.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */; };
-		5C1F6B9D2AA0404E00E87DE2 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */; };
-		5C1F6B9F2AA040B600E87DE2 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */; };
-		5C1F6BA22AA1013500E87DE2 /* OpenSkyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BA12AA1013500E87DE2 /* OpenSkyService.swift */; };
-		5C1F6BA42AA1058800E87DE2 /* GetAllStateVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BA32AA1058800E87DE2 /* GetAllStateVectors.swift */; };
-		5C1F6BA62AA1132C00E87DE2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BA52AA1132C00E87DE2 /* StringExtension.swift */; };
-		5C1F6BA82AA1133500E87DE2 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BA72AA1133500E87DE2 /* ArrayExtension.swift */; };
 		5C1F6BAB2AA14BA600E87DE2 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BAA2AA14BA600E87DE2 /* MockURLProtocol.swift */; };
-		5C1F6BAE2AA22B2500E87DE2 /* opensky_api_states_all_output.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6BAC2AA22B2500E87DE2 /* opensky_api_states_all_output.json */; };
-		5C1F6BAF2AA22B2500E87DE2 /* opensky_api_flights_all_output.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C1F6BAD2AA22B2500E87DE2 /* opensky_api_flights_all_output.json */; };
-		5C7446732AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C7446722AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json */; };
-		5CE1DA902AAA5C0A0060053A /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1DA8F2AAA5C0A0060053A /* ErrorModel.swift */; };
-		5CF3BC3C2AA6F49A00E83083 /* GetOwnStateVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6BB02AA42C6800E87DE2 /* GetOwnStateVectors.swift */; };
-		5CF3BC3E2AA76F8200E83083 /* GetAllFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC3D2AA76F8200E83083 /* GetAllFlights.swift */; };
-		5CF3BC402AA7823E00E83083 /* GetFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC3F2AA7823E00E83083 /* GetFlights.swift */; };
-		5CF3BC422AA7A32400E83083 /* GetArrivals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC412AA7A32400E83083 /* GetArrivals.swift */; };
-		5CF3BC442AA7AF1200E83083 /* GetDepartures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC432AA7AF1200E83083 /* GetDepartures.swift */; };
-		5CF3BC462AA7C5B600E83083 /* GetTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC452AA7C5B600E83083 /* GetTracks.swift */; };
-		5CF3BC492AA7D70200E83083 /* opensky_api_states_single_output.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CF3BC472AA7D6A700E83083 /* opensky_api_states_single_output.json */; };
+		5C9DD1322AB4BA390008A840 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD1312AB4BA390008A840 /* MapView.swift */; };
+		5C9DD1392AB4C78B0008A840 /* OpenSkyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9DD1382AB4C78B0008A840 /* OpenSkyAPI */; };
+		5C9DD13B2AB4D2050008A840 /* CLLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD13A2AB4D2050008A840 /* CLLocationProvider.swift */; };
+		5C9DD13E2AB4D36F0008A840 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD13D2AB4D36F0008A840 /* LoggerExtension.swift */; };
+		5C9DD1402AB5294A0008A840 /* CLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */; };
+		5C9DD1422AB7F2E10008A840 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */; };
 		5CF3BC4B2AA909AB00E83083 /* OpenSkyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3BC4A2AA909AB00E83083 /* OpenSkyServiceTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,34 +56,18 @@
 		5C1F6B602A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSkyFlightTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1F6B642A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerUITests.swift; sourceTree = "<group>"; };
 		5C1F6B662A9B0D3400E87DE2 /* OpenSky_Flight_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSky_Flight_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5C1F6B772A9B146500E87DE2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		5C1F6B792A9C816E00E87DE2 /* StateVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVector.swift; sourceTree = "<group>"; };
-		5C1F6B7B2A9CEDB800E87DE2 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
-		5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5C1F6B822A9FCCE500E87DE2 /* MockOpenSkyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOpenSkyServiceTests.swift; sourceTree = "<group>"; };
 		5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProdNetwork.xcconfig; sourceTree = "<group>"; };
 		5C1F6B882A9FF19F00E87DE2 /* OpenSkyFlightTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkyFlightTracker-Info.plist"; sourceTree = SOURCE_ROOT; };
-		5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
-		5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		5C1F6BA12AA1013500E87DE2 /* OpenSkyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyService.swift; sourceTree = "<group>"; };
-		5C1F6BA32AA1058800E87DE2 /* GetAllStateVectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllStateVectors.swift; sourceTree = "<group>"; };
-		5C1F6BA52AA1132C00E87DE2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		5C1F6BA72AA1133500E87DE2 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		5C1F6BAA2AA14BA600E87DE2 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
-		5C1F6BAC2AA22B2500E87DE2 /* opensky_api_states_all_output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opensky_api_states_all_output.json; sourceTree = "<group>"; };
-		5C1F6BAD2AA22B2500E87DE2 /* opensky_api_flights_all_output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opensky_api_flights_all_output.json; sourceTree = "<group>"; };
-		5C1F6BB02AA42C6800E87DE2 /* GetOwnStateVectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOwnStateVectors.swift; sourceTree = "<group>"; };
-		5C7446722AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opensky_api_tracks_all_output.json; sourceTree = "<group>"; };
-		5CE1DA8F2AAA5C0A0060053A /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		5C9DD1312AB4BA390008A840 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5C9DD13A2AB4D2050008A840 /* CLLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationProvider.swift; sourceTree = "<group>"; };
+		5C9DD13D2AB4D36F0008A840 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
+		5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtensions.swift; sourceTree = "<group>"; };
+		5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		5CF367C72AA90D8F0029D4CE /* OpenSkyFlightTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkyFlightTrackerTests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		5CF3BC3D2AA76F8200E83083 /* GetAllFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllFlights.swift; sourceTree = "<group>"; };
-		5CF3BC3F2AA7823E00E83083 /* GetFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlights.swift; sourceTree = "<group>"; };
-		5CF3BC412AA7A32400E83083 /* GetArrivals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetArrivals.swift; sourceTree = "<group>"; };
-		5CF3BC432AA7AF1200E83083 /* GetDepartures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDepartures.swift; sourceTree = "<group>"; };
-		5CF3BC452AA7C5B600E83083 /* GetTracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTracks.swift; sourceTree = "<group>"; };
-		5CF3BC472AA7D6A700E83083 /* opensky_api_states_single_output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opensky_api_states_single_output.json; sourceTree = "<group>"; };
 		5CF3BC4A2AA909AB00E83083 /* OpenSkyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9DD1392AB4C78B0008A840 /* OpenSkyAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				5C1F6B862A9FEFB300E87DE2 /* ProdNetwork.xcconfig */,
-				5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */,
 				5C1F6B482A9B0D3300E87DE2 /* OpenSkyFlightTracker */,
 				5C1F6B592A9B0D3400E87DE2 /* OpenSkyFlightTrackerTests */,
 				5C1F6B632A9B0D3400E87DE2 /* OpenSkyFlightTrackerUITests */,
@@ -152,6 +121,7 @@
 		5C1F6B482A9B0D3300E87DE2 /* OpenSkyFlightTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5C9DD13C2AB4D3550008A840 /* Extensions */,
 				5C1F6B4D2A9B0D3400E87DE2 /* Assets.xcassets */,
 				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
 				5C1F6B882A9FF19F00E87DE2 /* OpenSkyFlightTracker-Info.plist */,
@@ -159,6 +129,7 @@
 				5C1F6B4F2A9B0D3400E87DE2 /* Preview Content */,
 				5CDC0BD92AAD2CD40000047C /* Utilities */,
 				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
+				5C9DD1312AB4BA390008A840 /* MapView.swift */,
 			);
 			path = OpenSkyFlightTracker;
 			sourceTree = "<group>";
@@ -192,72 +163,12 @@
 			path = OpenSkyFlightTrackerUITests;
 			sourceTree = "<group>";
 		};
-		5C1F6B732A9B0D4500E87DE2 /* OpenSkyAPI */ = {
-			isa = PBXGroup;
-			children = (
-				5C1F6BA02AA1011700E87DE2 /* Services */,
-				5C1F6B742A9B0D5800E87DE2 /* Models */,
-				5C1F6B8F2A9FF9EF00E87DE2 /* Resources */,
-				5C1F6B992AA03EAB00E87DE2 /* Utilities */,
-			);
-			path = OpenSkyAPI;
-			sourceTree = "<group>";
-		};
-		5C1F6B742A9B0D5800E87DE2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5CE1DA8F2AAA5C0A0060053A /* ErrorModel.swift */,
-				5C1F6B7B2A9CEDB800E87DE2 /* Flight.swift */,
-				5C1F6B792A9C816E00E87DE2 /* StateVector.swift */,
-				5C1F6B772A9B146500E87DE2 /* Track.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		5C1F6B8F2A9FF9EF00E87DE2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5C1F6BAD2AA22B2500E87DE2 /* opensky_api_flights_all_output.json */,
-				5C1F6BAC2AA22B2500E87DE2 /* opensky_api_states_all_output.json */,
-				5CF3BC472AA7D6A700E83083 /* opensky_api_states_single_output.json */,
-				5C7446722AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5C1F6B992AA03EAB00E87DE2 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				5C1F6BA72AA1133500E87DE2 /* ArrayExtension.swift */,
-				5C1F6B9E2AA040B600E87DE2 /* BundleExtension.swift */,
-				5C1F6B7D2A9E524A00E87DE2 /* DictionaryExtension.swift */,
-				5C1F6B9C2AA0404E00E87DE2 /* LoggerExtension.swift */,
-				5C1F6BA52AA1132C00E87DE2 /* StringExtension.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		5C1F6BA02AA1011700E87DE2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				5CF3BC3D2AA76F8200E83083 /* GetAllFlights.swift */,
-				5C1F6BA32AA1058800E87DE2 /* GetAllStateVectors.swift */,
-				5CF3BC412AA7A32400E83083 /* GetArrivals.swift */,
-				5CF3BC432AA7AF1200E83083 /* GetDepartures.swift */,
-				5CF3BC3F2AA7823E00E83083 /* GetFlights.swift */,
-				5C1F6BB02AA42C6800E87DE2 /* GetOwnStateVectors.swift */,
-				5CF3BC452AA7C5B600E83083 /* GetTracks.swift */,
-				5C1F6BA12AA1013500E87DE2 /* OpenSkyService.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		5C1F6BA92AA14B8B00E87DE2 /* Mocks */ = {
@@ -268,10 +179,21 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		5C9DD13C2AB4D3550008A840 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */,
+				5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */,
+				5C9DD13D2AB4D36F0008A840 /* LoggerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5CDC0BD92AAD2CD40000047C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				5C1F6B842A9FEEDB00E87DE2 /* Configuration.swift */,
+				5C9DD13A2AB4D2050008A840 /* CLLocationProvider.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -292,6 +214,9 @@
 			dependencies = (
 			);
 			name = OpenSkyFlightTracker;
+			packageProductDependencies = (
+				5C9DD1382AB4C78B0008A840 /* OpenSkyAPI */,
+			);
 			productName = "OpenSky Flight Tracker";
 			productReference = 5C1F6B462A9B0D3300E87DE2 /* OpenSkyFlightTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -364,6 +289,9 @@
 				Base,
 			);
 			mainGroup = 5C1F6B3D2A9B0D3300E87DE2;
+			packageReferences = (
+				5C9DD1372AB4C78B0008A840 /* XCLocalSwiftPackageReference "../OpenSkyAPI" */,
+			);
 			productRefGroup = 5C1F6B472A9B0D3300E87DE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,10 +318,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1F6BAE2AA22B2500E87DE2 /* opensky_api_states_all_output.json in Resources */,
-				5CF3BC492AA7D70200E83083 /* opensky_api_states_single_output.json in Resources */,
-				5C1F6BAF2AA22B2500E87DE2 /* opensky_api_flights_all_output.json in Resources */,
-				5C7446732AAA6DDB00B6B9F8 /* opensky_api_tracks_all_output.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,27 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1F6BA82AA1133500E87DE2 /* ArrayExtension.swift in Sources */,
-				5C1F6B7A2A9C816E00E87DE2 /* StateVector.swift in Sources */,
-				5C1F6B9D2AA0404E00E87DE2 /* LoggerExtension.swift in Sources */,
-				5C1F6B9F2AA040B600E87DE2 /* BundleExtension.swift in Sources */,
+				5C9DD13B2AB4D2050008A840 /* CLLocationProvider.swift in Sources */,
 				5C1F6B4C2A9B0D3300E87DE2 /* ContentView.swift in Sources */,
+				5C9DD1422AB7F2E10008A840 /* BundleExtension.swift in Sources */,
 				5C1F6B852A9FEEDB00E87DE2 /* Configuration.swift in Sources */,
-				5C1F6B7C2A9CEDB800E87DE2 /* Flight.swift in Sources */,
-				5C1F6BA42AA1058800E87DE2 /* GetAllStateVectors.swift in Sources */,
-				5C1F6BA62AA1132C00E87DE2 /* StringExtension.swift in Sources */,
-				5CF3BC422AA7A32400E83083 /* GetArrivals.swift in Sources */,
+				5C9DD1402AB5294A0008A840 /* CLExtensions.swift in Sources */,
+				5C9DD1322AB4BA390008A840 /* MapView.swift in Sources */,
 				5C1F6B4A2A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift in Sources */,
-				5C1F6BA22AA1013500E87DE2 /* OpenSkyService.swift in Sources */,
-				5CF3BC402AA7823E00E83083 /* GetFlights.swift in Sources */,
-				5C1F6B7E2A9E524A00E87DE2 /* DictionaryExtension.swift in Sources */,
-				5CF3BC3E2AA76F8200E83083 /* GetAllFlights.swift in Sources */,
+				5C9DD13E2AB4D36F0008A840 /* LoggerExtension.swift in Sources */,
 				5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */,
-				5CF3BC442AA7AF1200E83083 /* GetDepartures.swift in Sources */,
-				5CF3BC462AA7C5B600E83083 /* GetTracks.swift in Sources */,
-				5CF3BC3C2AA6F49A00E83083 /* GetOwnStateVectors.swift in Sources */,
-				5CE1DA902AAA5C0A0060053A /* ErrorModel.swift in Sources */,
-				5C1F6B782A9B146500E87DE2 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -577,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -599,6 +511,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -629,6 +543,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -658,7 +574,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,7 +596,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Crawford-Design-Engineering--LLC.OpenSky-Flight-TrackerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -767,6 +683,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5C9DD1372AB4C78B0008A840 /* XCLocalSwiftPackageReference "../OpenSkyAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../OpenSkyAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C9DD1382AB4C78B0008A840 /* OpenSkyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenSkyAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C1F6B3E2A9B0D3300E87DE2 /* Project object */;
 }

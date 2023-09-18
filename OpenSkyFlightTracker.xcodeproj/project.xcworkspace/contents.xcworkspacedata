@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/michaelc/Developer/Personal Projects/OpenSky Flight Tracker/OpenSkyFlightTracker.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

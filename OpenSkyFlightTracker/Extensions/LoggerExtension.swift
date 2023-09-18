@@ -1,8 +1,11 @@
+// 
+// LoggerExtension.swift
+// OpenSkyFlightTracker
 //
-//  LoggerExtension.swift
-//  OpenSky Flight Tracker
+// Created by Michael Crawford on 9/15/23.
+// Using Swift 5.0
 //
-//  Created by Michael Crawford on 8/30/23.
+// Copyright © 2021 Crawford Design Engineering, LLC. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +18,7 @@ extension Logger {
             let subsystem = Bundle.loggerID(for: aClass)
             return Logger(subsystem: subsystem, category: String(describing: aClass))
         } else {
-            return Logger(subsystem: "com.cdellc.OpenSkyAPI", category: String(describing: T.self))
+            return Logger(subsystem: "com.cdellc.OpenSkyFlightTracker", category: String(describing: T.self))
         }
     }
 }

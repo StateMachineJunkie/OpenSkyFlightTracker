@@ -11,7 +11,7 @@ import SwiftUI
 struct OpenSkyFlightTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ViewModel(with: CLLocationProvider()))
         }
     }
 }
