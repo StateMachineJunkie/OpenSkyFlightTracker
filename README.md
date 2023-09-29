@@ -3,7 +3,7 @@
 ## Overview
 This project contains a test or sample program for my [OpenSkyAPI](https://github.com/StateMachineJunkie/OpenSkyAPI) package. It demonstrates how to leverage said package to get flight information within a given region of a provided user-location and then display flight details and tracking for a selected flight.
 
-For a detaild description of OpenSkyAPI and OpenSky-Network, follow the link for the package.
+For a detailed description of OpenSkyAPI and [OpenSky-Network](https://opensky-network.org), follow the link for the package.
 
 ### OpenSky-Network Account Required
 Note that you will need a valid username and passsword for [OpenSky-Network.org](https://opensky-network.org). Visit the site and tap the `Register` button to be taken to the registration page. Without a valid account and credentials, most of this code will not work for you. Some of the API calls do not need authentication but most of the ones I use, do.
@@ -50,7 +50,7 @@ Currently errors are logged to the console. If something is wrong or does not se
 * In the future, I'd like to add a filter for displaying flights that are on the ground versus in the air.
 * I need to fix the flight selection bug which requires a user to deselect the current flight by tapping the map background before selecting another flight to monitor or track.
 * Display any thrown errors to the user via popup.
-* Maybe if I get bored and have time on my hands, add [MapKit Annotation Clustering](https://developer.apple.com/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering).
+* I am considering the addition of [MapKit Annotation Clustering](https://developer.apple.com/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering). But it is not really necessary for this sample app and I'm trying to avoid gold-plating.
 
 
 ## License
