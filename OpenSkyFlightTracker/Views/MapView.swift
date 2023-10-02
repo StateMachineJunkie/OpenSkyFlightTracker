@@ -19,10 +19,6 @@ struct MapView: View {
     @State private var visibleRegion: MKCoordinateRegion?
     @State var viewModel: ViewModel
 
-    @State var localFilter: ViewModel.Filter = .all
-
-    private let filterOptions = ["All", "On the ground", "Airborne"]
-
     private let logger = Logger.logger(for: MapView.self)
 
     var body: some View {
@@ -79,15 +75,14 @@ struct MapView: View {
                         } label: {
                             Text("Track")
                         }
-                    }
-                    /*
-                    Picker("Filter Options", selection: $localFilter) {
-                        ForEach(0..<filterOptions.count, id: \.rawValue) { index in
-                            Text(filterOptions[index]).tag(index)
+                    } else {
+                        Picker("Filter Options", selection: $viewModel.filter) {
+                            Text("All").tag(ViewModel.Filter.all)
+                            Text("On Ground").tag(ViewModel.Filter.onGround)
+                            Text("Airborne").tag(ViewModel.Filter.airborne)
                         }
+                        .pickerStyle(.segmented)
                     }
-                    .pickerStyle(.segmented)
-                     */
                     Spacer()
                 }
             }

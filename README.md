@@ -27,7 +27,7 @@ This program and its associated package make use of the following Apple framewor
 See the implementation of this program and its associated package for details.
 
 ## App Behavior and Usage
-When the app first starts up it will display flights in a 200 square kilometer region around the current location of the device. While the app is busy a generic activity indicator will be displayed in the center of the view. At the bottom you will notice a small overlay containing a `Refresh` button. You may tap this at any time in order to fetch updates from the network. New flights will be added, old ones will be removed, and existing filghts will be updated as regards position and altitude.
+When the app first starts up it will display flights in a 200 square kilometer region around the current location of the device. While the app is busy a generic activity indicator will be displayed in the center of the view. At the bottom you will notice a small overlay containing a `Refresh` button and segmented buttons that allow you to filter the flight display. You may tap the `Refresh` button at any time in order to fetch updates from the network. New flights will be added, old ones will be removed, and existing filghts will be updated as regards position and altitude. You can also apply an **Airborn** or **On Ground** status filter to the diplayed flights. The default state is for no filter to be applied, which is indicated by **All**.
 
 ![Initial view after app load](default_img.png)
 
@@ -47,7 +47,7 @@ In every view of the map, pinch/zoom is supported. I have not implemented [MapKi
 Currently errors are logged to the console. If something is wrong or does not seem to be working, check there.
 
 ## TODO
-* In the future, I'd like to add a filter for displaying flights that are on the ground versus in the air.
+* The `Refresh` and `Track` buttons should be mutually exclusive.
 * I need to fix the flight selection bug which requires a user to deselect the current flight by tapping the map background before selecting another flight to monitor or track.
 * Display any thrown errors to the user via popup.
 * I am considering the addition of [MapKit Annotation Clustering](https://developer.apple.com/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering). But it is not really necessary for this sample app and I'm trying to avoid gold-plating.

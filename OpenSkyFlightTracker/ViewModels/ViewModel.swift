@@ -18,7 +18,7 @@ import os.log
         case idle, loadingData, error(Error)
     }
 
-    enum Filter: Int, CaseIterable {
+    enum Filter: CaseIterable {
         case all, onGround, airborne
     }
 
