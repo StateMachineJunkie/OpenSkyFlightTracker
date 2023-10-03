@@ -33,14 +33,17 @@ import os.log
             switch (state, oldValue) {
             case (.idle, .idle), (.loadingData, .loadingData), (.error, .error):
                 return
+            case (.idle, _):
+                if error != nil { error = nil }
             case (.loadingData, _):
                 resetSelectionState()
-            default:
-                break
+            case (.error(let error), _):
+                self.error = error
             }
         }
     }
     private(set) var stateVectors: OpenSkyService.StateVectors = .empty
+    var error: Error?
 
     var filter: Filter = .all {
         didSet {
@@ -88,7 +91,12 @@ import os.log
                     logger.debug("Updated region: \(String(describing: region))")
                     self.locationInfo = region
                     logger.debug("Updated state vectors: \(String(describing: stateVectors))")
-                    self.stateVectors = stateVectors
+                    self.stateVectors = OpenSkyService.StateVectors(time: stateVectors.time,
+                                                                    states: stateVectors.states.filter({
+                        $0.altitude != nil &&
+                        $0.latitude != nil &&
+                        $0.longitude != nil
+                    }))
                     applyFilter()
                     state = .idle
                 }
@@ -168,6 +176,11 @@ import os.log
 
     private func resetSelectionState() {
         selectedTrack = nil
+    }
+
+    func resetErrorState() {
+        guard case .error = state else { return }
+        state = .idle
     }
 }
 

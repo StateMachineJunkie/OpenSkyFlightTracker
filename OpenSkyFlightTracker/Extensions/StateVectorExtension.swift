@@ -8,6 +8,7 @@
 // Copyright © 2021 Crawford Design Engineering, LLC. All rights reserved.
 //
 
+import CoreLocation
 import Foundation
 import OpenSkyAPI
 
@@ -18,4 +19,16 @@ extension OpenSkyService.StateVector {
     var displayHeading: String { trueTrack == nil ? "Unknown" : "\(UInt(round(trueTrack!)))º" }
     var displayTransponder: String { icao24.uppercased() }
     var displayVelocity: String { velocity == nil ? "Unknown" : "\(UInt(round(velocity!))) meters/second" }
+}
+
+extension OpenSkyService.StateVector: GeoTrackable {
+
+    var name: String {
+        displayFlightName
+    }
+
+    // For our application, vectors missing LAT, LON, or ALT are not useful and should have been filtered on the way in.
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: Double(latitude!), longitude: Double(longitude!))
+    }
 }

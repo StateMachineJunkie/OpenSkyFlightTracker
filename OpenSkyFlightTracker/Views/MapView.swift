@@ -24,10 +24,8 @@ struct MapView: View {
     var body: some View {
         Map(position: $position, selection: $selectedAircraft) {
             ForEach(viewModel.filteredStateVectors.states, id: \.icao24) { aircraft in
-                if let coordinate = aircraft.coordinate {
-                    Annotation(aircraft.callsign ?? aircraft.icao24, coordinate: coordinate, anchor: .center) {
-                        AircraftView(angle: Double(aircraft.trueTrack ?? 00), isSelected: aircraft.icao24 == selectedAircraft)
-                    }
+                Annotation(aircraft.callsign ?? aircraft.icao24, coordinate: aircraft.coordinate, anchor: .center) {
+                    AircraftView(angle: Double(aircraft.trueTrack ?? 00), isSelected: aircraft.icao24 == selectedAircraft)
                 }
             }
             if let track = viewModel.selectedTrack {
@@ -63,25 +61,26 @@ struct MapView: View {
                 }
                 HStack {
                     Spacer()
-                    Button {
-                        viewModel.loadData()
-                    } label: {
-                        Text("Refresh")
-                    }
                     if let stateVector = viewModel.selectedStateVector {
-                        Spacer()
                         Button {
                             viewModel.loadTrack(for: OpenSkyService.ICAO24(icao24String: stateVector.icao24)!)
                         } label: {
                             Text("Track")
                         }
                     } else {
-                        Picker("Filter Options", selection: $viewModel.filter) {
-                            Text("All").tag(ViewModel.Filter.all)
-                            Text("On Ground").tag(ViewModel.Filter.onGround)
-                            Text("Airborne").tag(ViewModel.Filter.airborne)
+                        VStack {
+                            Picker("Filter Options", selection: $viewModel.filter) {
+                                Text("All").tag(ViewModel.Filter.all)
+                                Text("On Ground").tag(ViewModel.Filter.onGround)
+                                Text("Airborne").tag(ViewModel.Filter.airborne)
+                            }
+                            .pickerStyle(.segmented)
+                            Button {
+                                viewModel.loadData()
+                            } label: {
+                                Text("Refresh")
+                            }
                         }
-                        .pickerStyle(.segmented)
                     }
                     Spacer()
                 }
@@ -94,11 +93,4 @@ struct MapView: View {
 
 #Preview {
     MapView(viewModel: ViewModel(with: CLLocationProvider()))
-}
-
-extension OpenSkyService.StateVector {
-    var coordinate: CLLocationCoordinate2D? {
-        guard let latitude = latitude, let longitude = longitude else { return nil }
-        return CLLocationCoordinate2D(latitude: Double(latitude), longitude: Double(longitude))
-    }
 }

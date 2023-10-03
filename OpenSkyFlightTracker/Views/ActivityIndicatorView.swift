@@ -12,14 +12,13 @@ import SwiftUI
 
 struct ActivityIndicatorView: View {
     var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color(white: 0.0, opacity: 0.2))
-            ProgressView("OpenSky Network Update")
-                .progressViewStyle(.circular)
-                .foregroundColor(.accentColor)
-                .tint(.accentColor)
-        }
+        ProgressView("OpenSky Network Update")
+            .progressViewStyle(.circular)
+            .foregroundColor(.white)
+            .tint(.white)
+            .padding()
+            .background(Color(white: 0.0, opacity: 0.5))
+            .cornerRadius(10.0)
     }
 }
 
