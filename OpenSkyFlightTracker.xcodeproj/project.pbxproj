@@ -21,11 +21,15 @@
 		5C9DD1402AB5294A0008A840 /* CLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */; };
 		5C9DD1422AB7F2E10008A840 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */; };
 		5C9DD1452AB8D7260008A840 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DD1442AB8D7260008A840 /* ActivityIndicatorView.swift */; };
+		5CBA86B42ACDAC02009D5D31 /* OSFTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA86B32ACDAC02009D5D31 /* OSFTError.swift */; };
+		5CBA86B82ACDC381009D5D31 /* GeoTrackableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA86B72ACDC381009D5D31 /* GeoTrackableProtocol.swift */; };
+		5CBA86DC2AD3B4D0009D5D31 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA86DB2AD3B4D0009D5D31 /* ARViewContainer.swift */; };
 		5CC022C12AC644CF0032F0F6 /* OpenSkyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC022C02AC644CF0032F0F6 /* OpenSkyAPI */; };
 		5CC022C32AC647AC0032F0F6 /* OpenSkyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE33F9F2AC63D3D00D958EC /* OpenSkyAPI */; };
 		5CC9531E2AC3C2C700FF446D /* AircraftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC9531D2AC3C2C700FF446D /* AircraftView.swift */; };
 		5CC953202AC4B32800FF446D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC9531F2AC4B32800FF446D /* ArrayExtensions.swift */; };
 		5CC953222AC4B37700FF446D /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC953212AC4B37700FF446D /* ArrayExtensionTests.swift */; };
+		5CE6E9202AD5F447005DC400 /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE6E91F2AD5F447005DC400 /* NSErrorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +69,16 @@
 		5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtensions.swift; sourceTree = "<group>"; };
 		5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		5C9DD1442AB8D7260008A840 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		5CBA86B12ACDAAA9009D5D31 /* GeoTrackingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackingVM.swift; sourceTree = "<group>"; };
+		5CBA86B32ACDAC02009D5D31 /* OSFTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSFTError.swift; sourceTree = "<group>"; };
+		5CBA86B52ACDBF35009D5D31 /* GeoTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackerView.swift; sourceTree = "<group>"; };
+		5CBA86B72ACDC381009D5D31 /* GeoTrackableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackableProtocol.swift; sourceTree = "<group>"; };
+		5CBA86DB2AD3B4D0009D5D31 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		5CC9531D2AC3C2C700FF446D /* AircraftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftView.swift; sourceTree = "<group>"; };
 		5CC9531F2AC4B32800FF446D /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		5CC953212AC4B37700FF446D /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTests.swift; sourceTree = "<group>"; };
+		5CE6E91F2AD5F447005DC400 /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		5CE6E9212AD628DB005DC400 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		5CF367C72AA90D8F0029D4CE /* OpenSkyFlightTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkyFlightTrackerTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -130,6 +141,8 @@
 				5CDC0BD92AAD2CD40000047C /* Utilities */,
 				5C1F6B7F2A9FBF9F00E87DE2 /* ViewModels */,
 				5C9DD1432AB8D7090008A840 /* Views */,
+				5CBA86B32ACDAC02009D5D31 /* OSFTError.swift */,
+				5CBA86B72ACDC381009D5D31 /* GeoTrackableProtocol.swift */,
 			);
 			path = OpenSkyFlightTracker;
 			sourceTree = "<group>";
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1F6B802A9FBFBE00E87DE2 /* ViewModel.swift */,
+				5CBA86B12ACDAAA9009D5D31 /* GeoTrackingVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,7 +180,9 @@
 				5C9DD1412AB7F2E10008A840 /* BundleExtension.swift */,
 				5C9DD13F2AB5294A0008A840 /* CLExtensions.swift */,
 				5C9DD13D2AB4D36F0008A840 /* LoggerExtension.swift */,
+				5CE6E91F2AD5F447005DC400 /* NSErrorExtension.swift */,
 				5C03B53F2ABD46BD00DBDECC /* StateVectorExtension.swift */,
+				5CE6E9212AD628DB005DC400 /* TimeIntervalExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,7 +193,9 @@
 				5C9DD1442AB8D7260008A840 /* ActivityIndicatorView.swift */,
 				5C8B53622AB9145A0035AB7D /* AircraftInfoView.swift */,
 				5CC9531D2AC3C2C700FF446D /* AircraftView.swift */,
+				5CBA86DB2AD3B4D0009D5D31 /* ARViewContainer.swift */,
 				5C1F6B4B2A9B0D3300E87DE2 /* ContentView.swift */,
+				5CBA86B52ACDBF35009D5D31 /* GeoTrackerView.swift */,
 				5C9DD1312AB4BA390008A840 /* MapView.swift */,
 			);
 			path = Views;
@@ -337,20 +355,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBA86B42ACDAC02009D5D31 /* OSFTError.swift in Sources */,
 				5C9DD13B2AB4D2050008A840 /* CLLocationProvider.swift in Sources */,
 				5C9DD1452AB8D7260008A840 /* ActivityIndicatorView.swift in Sources */,
 				5C8B53642ABD3E7E0035AB7D /* AircraftInfoView.swift in Sources */,
 				5C1F6B4C2A9B0D3300E87DE2 /* ContentView.swift in Sources */,
+				5CE6E9202AD5F447005DC400 /* NSErrorExtension.swift in Sources */,
 				5C9DD1422AB7F2E10008A840 /* BundleExtension.swift in Sources */,
 				5C1F6B852A9FEEDB00E87DE2 /* Configuration.swift in Sources */,
 				5C9DD1402AB5294A0008A840 /* CLExtensions.swift in Sources */,
 				5CC9531E2AC3C2C700FF446D /* AircraftView.swift in Sources */,
 				5C9DD1322AB4BA390008A840 /* MapView.swift in Sources */,
+				5CBA86DC2AD3B4D0009D5D31 /* ARViewContainer.swift in Sources */,
 				5CC953202AC4B32800FF446D /* ArrayExtensions.swift in Sources */,
 				5C1F6B4A2A9B0D3300E87DE2 /* OpenSkyFlightTrackerApp.swift in Sources */,
 				5C9DD13E2AB4D36F0008A840 /* LoggerExtension.swift in Sources */,
 				5C03B5402ABD46BD00DBDECC /* StateVectorExtension.swift in Sources */,
 				5C1F6B812A9FBFBE00E87DE2 /* ViewModel.swift in Sources */,
+				5CBA86B82ACDC381009D5D31 /* GeoTrackableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,8 +543,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "So we can display the location of flights in the real world.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring region based on your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring region based on your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -553,8 +576,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenSkyFlightTracker-Info.plist";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring reagion based on your current location.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "So we can display the location of flights in the real world.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "So we can generate a monitoring region based on your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So we can generate a monitoring region based on your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
